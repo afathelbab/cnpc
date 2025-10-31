@@ -1,9 +1,9 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Training Quiz</title>
+    <title>Day 1 Training Quiz</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Load Inter font -->
@@ -29,7 +29,7 @@
         
         <!-- Quiz Title -->
         <h1 id="quiz-title" class="text-2xl sm:text-3xl font-bold text-center mb-6 text-gray-800">
-            Day 1: Workplace Safety
+            Day 1: Foundations & Professional Communication
         </h1>
 
         <!-- Quiz Container -->
@@ -63,58 +63,67 @@
 
     <script>
         // --- QUIZ DATA ---
-        // Edit this section to create your own quizzes.
-        // You can add as many questions as you want.
+        // Day 1: Foundations & Professional Communication
         const quizData = [
             {
-                question: "What does the acronym 'PPE' stand for?",
+                question: "Which computer component is the 'brain' of the computer, responsible for processing instructions?",
                 answers: [
-                    "Personal Protective Equipment",
-                    "Private Property Entrance",
-                    "People, Places, and Environment",
-                    "Procedure Planning Envelope"
+                    "RAM (Random Access Memory)",
+                    "Hard Drive (HDD)",
+                    "CPU (Central Processing Unit)",
+                    "Motherboard"
                 ],
-                correct: "Personal Protective Equipment"
+                correct: "CPU (Central Processing Unit)"
             },
             {
-                question: "Where can you find detailed information about chemicals used in your workspace?",
+                question: "Which port is most commonly used to connect a modern display (monitor or projector) for a digital signal?",
                 answers: [
-                    "The company website",
-                    "The employee handbook",
-                    "A Safety Data Sheet (SDS)",
-                    "A sign on the wall"
+                    "HDMI",
+                    "Ethernet (RJ45)",
+                    "USB-A",
+                    "Audio Jack"
                 ],
-                correct: "A Safety Data Sheet (SDS)"
+                correct: "HDMI"
             },
             {
-                question: "What is the first thing you should do if you discover a fire?",
+                question: "When writing a professional email in Outlook, what is the most important element for ensuring clarity and getting a response?",
                 answers: [
-                    "Try to put it out yourself",
-                    "Call your manager",
-                    "Activate the nearest fire alarm and alert others",
-                    "Grab your personal belongings"
+                    "Using emojis to show friendliness",
+                    "A clear, concise, and descriptive subject line",
+                    "Marking the email as 'High Importance'",
+                    "Writing the entire message in bold"
                 ],
-                correct: "Activate the nearest fire alarm and alert others"
+                correct: "A clear, concise, and descriptive subject line"
             },
             {
-                question: "When lifting a heavy object, you should primarily use the muscles in your:",
+                question: "What is a key component of 'active listening' in workplace communication?",
                 answers: [
-                    "Back",
-                    "Arms and shoulders",
-                    "Legs",
-                    "Stomach"
+                    "Waiting quietly for your turn to speak",
+                    "Thinking about your reply while the other person is talking",
+                    "Interrupting to correct a mistake",
+                    "Paraphrasing what the speaker said to confirm understanding"
                 ],
-                correct: "Legs"
+                correct: "Paraphrasing what the speaker said to confirm understanding"
             },
             {
-                question: "What does a 'trip hazard' refer to?",
+                question: "You find a printed document marked 'Confidential' on a shared printer. What is the most ethical action to take?",
                 answers: [
-                    "A planned company trip",
-                    "An object on the floor that could cause someone to fall",
-                    "An electrical shock risk",
-                    "A vacation day"
+                    "Read it to see if it's important",
+                    "Leave it there for the owner to find",
+                    "Shred it immediately to protect the data", // Removed the stray underscore here
+                    "Secure the document and try to return it to the owner or report it to HR/Security"
                 ],
-                correct: "An object on the floor that could cause someone to fall"
+                correct: "Secure the document and try to return it to the owner or report it to HR/Security"
+            },
+            {
+                question: "What is the best practice regarding punctuality for team meetings (both virtual and in-person)?",
+                answers: [
+                    "Join 5 minutes late to avoid awkward silence",
+                    "Arrive exactly on time or 1-2 minutes early",
+                    "Wait for your manager to call you before joining",
+                    "Join, but keep your camera off and mute yourself"
+                ],
+                correct: "Arrive exactly on time or 1-2 minutes early"
             }
         ];
         
@@ -199,7 +208,7 @@
         });
 
         // Event listener for the 'Restart' button
-        restartBtn.addEventListener('click', () => {
+        restartBtn.addEventListener('click', () => { // Fixed: Removed the stray 'd' from '()d =>'
             // Reset the quiz state
             currentQuestionIndex = 0;
             score = 0;
@@ -219,3 +228,4 @@
     </script>
 </body>
 </html>
+
