@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Day Training Workshops</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply the Inter font stack */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Custom styles for active tab */
+        .tab-button.active {
+            border-color: #2563EB; /* blue-600 */
+            color: #2563EB; /* blue-600 */
+            background-color: #EFF6FF; /* blue-50 */
+        }
+
+        /* Hide content by default */
+        .tab-content {
+            display: none;
+        }
+
+        /* Show active content */
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 antialiased">
+
+    <div class="container mx-auto max-w-5xl p-4 sm:p-8">
+        <!-- Header -->
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 text-center">
+            Computer Basics & Practical Soft Skills Workshops
+        </h1>
+
+        <!-- Tab Navigation -->
+        <nav class="flex flex-col sm:flex-row justify-center border-b border-gray-300 mb-8" aria-label="Tabs">
+            <button class="tab-button active" data-tab="day1" role="tab" aria-controls="day1" aria-selected="true">
+                Day 1: Foundations
+            </button>
+            <button class="tab-button" data-tab="day2" role="tab" aria-controls="day2" aria-selected="false">
+                Day 2: Report Challenge
+            </button>
+            <button class="tab-button" data-tab="day3" role="tab" aria-controls="day3" aria-selected="false">
+                Day 3: Problem Solving
+            </button>
+        </nav>
+
+        <!-- Tab Content Area -->
+        <main>
+            <!-- Day 1 Content -->
+            <section id="day1" class="tab-content active" role="tabpanel" aria-labelledby="day1-tab">
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-blue-700 mb-6 pb-2 border-b border-blue-100">
+                        Day 1: Foundations & Communication Scenarios
+                    </h2>
+                    
+                    <!-- Meta Info -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 text-sm">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <strong class="block text-blue-800">Objective:</strong>
+                            <p class="text-blue-700">Apply hardware, Outlook, etiquette, and ethics concepts in practical scenarios.</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <strong class="block text-blue-800">Format:</strong>
+                            <p class="text-blue-700">Groups of 3-4, scenario-based discussion, and group sharing.</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <strong class="block text-blue-800">Time:</strong>
+                            <p class="text-blue-700">1.5 Hours (60 mins group work, 30 mins discussion)</p>
+                        </div>
+                    </div>
+
+                    <!-- Scenarios -->
+                    <div class="space-y-8">
+                        <!-- Scenario 1 -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Scenario 1: The "Vague Email"</h3>
+                            <p class="text-gray-600 mb-2"><strong class="text-gray-700">Topic:</strong> (Outlook & Professional Communication)</p>
+                            <p class="mb-4">You receive the following email from a manager in another department you haven't met:</p>
+                            <blockquote class="bg-gray-50 border-l-4 border-gray-300 p-4 my-4 italic text-gray-600">
+                                <strong>Subject:</strong> FW: status<br>
+                                hey,<br><br>
+                                need the update on the Al-Hamra pipeline inspection. have a call with operations at 3.<br><br>
+                                -B
+                            </blockquote>
+                            <h4 class="font-semibold text-gray-700 mb-2">Your Task:</h4>
+                            <p class="mb-4">As a group, draft a professional reply. Your reply should:</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li>Be polite and maintain a professional tone.</li>
+                                <li>Clarify <strong>what kind</strong> of update they need (e.g., "the full report," "just the pressure test results," "a one-line summary").</li>
+                                <li>Give them a clear timeline for when you can provide the status (e.g., "I am looking into this now and can send you the pressure test results by 2:30 PM.").</li>
+                            </ul>
+                        </div>
+
+                        <!-- Scenario 2 -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Scenario 2: The "Conference Room Chaos"</h3>
+                            <p class="text-gray-600 mb-4"><strong class="text-gray-700">Topic:</strong> (Hardware & Workplace Etiquette)</p>
+                            <p class="mb-4">You are about to start the mandatory <strong>daily safety briefing</strong> for a new drilling operation in 10 minutes. Contractors and team members are waiting. You plug your laptop into the conference room's main monitor, and... nothing. The screen is black.</p>
+                            <h4 class="font-semibold text-gray-700 mb-2">Your Task:</h4>
+                            <ul class="list-decimal list-inside space-y-2 text-gray-700">
+                                <li><strong>Hardware:</strong> What are the <strong>first three</strong> hardware troubleshooting steps you take? (e.g., "Check power cable," "Check HDMI/VGA cable," "Press `Windows + P` to change projection mode," etc.)</li>
+                                <li><strong>Etiquette:</strong> What do you do <strong>at the same time</strong>? (e.g., designate someone to call IT immediately, have the briefing slides ready on a colleague's laptop as a backup, decide if you can start without the slides.)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Scenario 3 -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Scenario 3: The "Found USB Drive"</h3>
+                            <p class="text-gray-600 mb-4"><strong class="text-gray-700">Topic:</strong> (Professional Ethics & Hardware)</p>
+                            <p class="mb-4">You find a small USB flash drive on the floor <strong>in the control room</strong> near a workstation. There's no name on it. You know that plugging it into a computer is the fastest way to see who it belongs to.</p>
+                            <h4 class="font-semibold text-gray-700 mb-2">Your Task:</h4>
+                            <ul class="list-decimal list-inside space-y-2 text-gray-700">
+                                <li><strong>Ethics:</strong> What is the <strong>risk</strong> of plugging it in (to your computer <strong>and</strong> to the plant's control network)?</li>
+                                <li><strong>Action:</strong> What is the <strong>correct</strong> professional and ethical action to take? (e.g., Do not plug it in. Give it to your shift supervisor or the IT/Security department.)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Scenario 4 -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Scenario 4: The "Active Listening Test"</h3>
+                            <p class="text-gray-600 mb-4"><strong class="text-gray-700">Topic:</strong> (Communication & Etiquette)</p>
+                            <p class="mb-4">One person in your group will be the "Speaker" and one will be the "Listener."</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Speaker's Job:</strong> Talk for 2 minutes straight about "What you did last weekend."</li>
+                                <li><strong>Listener's Job:</strong> You <strong>cannot</strong> just nod. You must use active listening phrases (e.g., "So what you're saying is...", "It sounds like you felt...", "Tell me more about...").</li>
+                                <li><strong>Group's Job:</strong> Observe the conversation. Did the listener <strong>actually</strong> listen, or just wait for their turn to talk? How did the active listening phrases change the conversation? Be ready to discuss.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Day 2 Content -->
+            <section id="day2" class="tab-content" role="tabpanel" aria-labelledby="day2-tab">
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-green-700 mb-6 pb-2 border-b border-green-100">
+                        Day 2: The 60-Minute Report Challenge
+                    </h2>
+
+                    <!-- Meta Info -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 text-sm">
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <strong class="block text-green-800">Objective:</strong>
+                            <p class="text-green-700">Combine Excel, Word, and PowerPoint skills in a timed project. Tests Time Management.</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <strong class="block text-green-800">Format:</strong>
+                            <p class="text-green-700">Groups of 3-4, one computer. 60-minute challenge to produce a report and slide.</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <strong class="block text-green-800">Time:</strong>
+                            <p class="text-green-700">1.5 Hours (60 mins challenge, 30 mins presentations)</p>
+                        </div>
+                    </div>
+
+                    <!-- Task -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Your Task</h3>
+                        <p class="mb-4">You've just been given a raw data export of recent maintenance work. A manager needs a "quick summary" for the weekly operations meeting in one hour.</p>
+                        <h4 class="font-semibold text-gray-700 mb-2">Your group must produce:</h4>
+                        <ul class="list-decimal list-inside space-y-2 text-gray-700 mb-6">
+                            <li><strong>Excel:</strong> A simple spreadsheet that is sorted, filtered, and calculates the <strong>Total Hours Spent</strong>. You must also create <strong>one simple bar chart</strong> showing the "Total Hours by Task_Type."</li>
+                            <li><strong>Word:</strong> A <strong>one-paragraph summary</strong> that explains the data (e.g., "This data shows maintenance hours for last week's work... The total hours were X. As the chart shows, 'Corrective Maintenance' is taking up the most time...").</li>
+                            <li><strong>PowerPoint:</strong> A <strong>single, clean, professional slide</strong> that includes a clear title, your summary, and your chart.</li>
+                            <li><strong>Time Management:</strong> You must plan as a group. Who is doing what? Who is the leader? You must finish in 60 minutes.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Mock Data -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Mock Data</h3>
+                        <p class="mb-4">Provide this as a text block they can copy:</p>
+                        <pre class="bg-gray-900 text-white p-4 rounded-md overflow-x-auto text-sm font-mono">
+Site,Wellhead_ID,Task_Type,Hours_Spent
+East Desert Site,ED-101,Routine Check,4
+West Gulf Site,WG-205,Corrective Maintenance,12
+East Desert Site,ED-102,Routine Check,4.5
+West Gulf Site,WG-206,Preventive Maintenance,8
+East Desert Site,ED-101,Corrective Maintenance,9
+West Gulf Site,WG-205,Routine Check,3.5
+East Desert Site,ED-103,Preventive Maintenance,7
+West Gulf Site,WG-206,Corrective Maintenance,11
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Day 3 Content -->
+            <section id="day3" class="tab-content" role="tabpanel" aria-labelledby="day3-tab">
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold text-purple-700 mb-6 pb-2 border-b border-purple-100">
+                        Day 3: Problem-Solving in Practice
+                    </h2>
+                    
+                    <!-- Meta Info -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 text-sm">
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <strong class="block text-purple-800">Objective:</strong>
+                            <p class="text-purple-700">Apply the 4-step structured approach to problem-solving to realistic scenarios.</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <strong class="block text-purple-800">Format:</strong>
+                            <p class="text-purple-700">Groups of 3-4, assigned one case study, apply the 4-step process.</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <strong class="block text-purple-800">Time:</strong>
+                            <p class="text-purple-700">2 Hours (90 mins group work, 30 mins presentations)</p>
+                        </div>
+                    </div>
+
+                    <!-- Task -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Your Task</h3>
+                        <p class="mb-4">For your assigned case study, work as a group to apply the 4-step process. Use a whiteboard or large paper to document your answers.</p>
+                        <ul class="list-decimal list-inside space-y-2 text-gray-700">
+                            <li><strong>Define the <strong>Real</strong> Problem:</strong> Identify the <strong>Symptom</strong>, the <strong>Real Problem</strong>, and the <strong>Root Cause</strong> (use the "5 Whys" technique).</li>
+                            <li><strong>Brainstorm Potential Solutions:</strong> List 3-5 potential solutions that address the <strong>root cause</strong>.</li>
+                            <li><strong>Evaluate and Choose a Solution:</strong> Pick the best solution. Justify your choice (e.g., "This is a low-effort, high-impact 'Quick Win'").</li>
+                            <li><strong>Implement and Review:</strong> Describe how you would implement this fix and how you would check later to see if it <strong>actually</strong> worked.</li>
+                        </ul>
+                        <p class="mt-4 font-semibold">Be prepared to present your findings to the class.</p>
+                    </div>
+
+                    <!-- Case Studies -->
+                    <div class="space-y-6">
+                        <!-- Case Study 1 -->
+                        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Case Study 1: The Meeting Room Mix-Up</h3>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li><strong>Symptom:</strong> You and your team show up for the critical <strong>Pre-Startup Safety Review</strong> in Conference Room B, but another team is already in there.</li>
+                                <li><strong>Problem:</strong> They <strong>also</strong> booked Room B. This is the second time this has happened this week, and it's delaying a critical safety sign-off.</li>
+                                <li><strong>Task:</strong> Find the root cause and propose a solution.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Case Study 2 -->
+                        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Case Study 2: The Confusing Email Chain</h3>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li><strong>Symptom:</strong> A <strong>pipeline repair project</strong> is stalled because no one is sure who is supposed to approve the "hot-work" permit.</li>
+                                <li><strong>Problem:</strong> You find a 30-message email chain with 10 different people (from Operations, Safety, and Maintenance) all asking "Who is handling this?"</li>
+                                <li><strong>Task:</strong> Find the root cause and propose a solution to fix this project (and prevent it from happening on the *next* project).</li>
+                            </ul>
+                        </div>
+
+                        <!-- Case Study 3 -->
+                        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Case Study 3: The PPE Cabinet</h3>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li><strong>Symptom:</strong> The PPE (Personal Protective Equipment) cabinet at the site entrance is constantly empty of hard hats and safety glasses by 10 AM.</li>
+                                <li><strong>Problem:</strong> Crews are having to walk back to the main warehouse to get gear, delaying work. This morning, a visitor almost entered the site without glasses because the cabinet was empty.</li>
+                                <li><strong>Task:</strong> Find the root cause and propose a solution.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab-button');
+            const contents = document.querySelectorAll('.tab-content');
+
+            // --- Custom Tab Button CSS (merged with defaults) ---
+            // We set these here to avoid purging and to make them easy to edit.
+            const tabBaseStyles = 'py-4 px-6 font-medium text-center border-b-4 transition-all duration-200 ease-in-out cursor-pointer';
+            const tabInactiveStyles = 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300';
+            const tabActiveStyles = 'border-blue-600 text-blue-600 bg-blue-50';
+
+            // --- Initialize Tabs ---
+            function initializeTabs() {
+                tabs.forEach((tab, index) => {
+                    // Apply base styles
+                    tab.className = `${tabBaseStyles} ${tabInactiveStyles}`;
+                    
+                    tab.addEventListener('click', () => {
+                        switchTab(tab);
+                    });
+                });
+
+                // Set default active tab (Day 1)
+                const defaultTab = tabs[0];
+                const defaultContent = document.getElementById(defaultTab.dataset.tab);
+                
+                if (defaultTab && defaultContent) {
+                    defaultTab.className = `${tabBaseStyles} ${tabActiveStyles}`;
+                    defaultTab.setAttribute('aria-selected', 'true');
+                    defaultContent.style.display = 'block';
+                }
+            }
+
+            // --- Switch Tab Function ---
+            function switchTab(clickedTab) {
+                // Get the target content panel ID from data-tab attribute
+                const targetId = clickedTab.dataset.tab;
+                const targetContent = document.getElementById(targetId);
+
+                // If target doesn't exist, do nothing
+                if (!targetContent) return;
+
+                // 1. Deactivate all tabs and hide all content
+                tabs.forEach(tab => {
+                    tab.className = `${tabBaseStyles} ${tabInactiveStyles}`;
+                    tab.setAttribute('aria-selected', 'false');
+                });
+                
+                contents.forEach(content => {
+                    content.style.display = 'none';
+                });
+
+                // 2. Activate the clicked tab
+                clickedTab.className = `${tabBaseStyles} ${tabActiveStyles}`;
+                clickedTab.setAttribute('aria-selected', 'true');
+
+                // 3. Show the target content
+                targetContent.style.display = 'block';
+            }
+
+            // Run the initialization
+            initializeTabs();
+        });
+    </script>
+
+</body>
+</html>
+
